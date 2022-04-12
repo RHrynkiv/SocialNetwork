@@ -107,5 +107,4 @@ const dispatchToProps = (dispatch: any) => {
 
 export default compose(
     connect(stateToProps, dispatchToProps),
-    withAuthRedirect
 )(UsersContainerAPI);
