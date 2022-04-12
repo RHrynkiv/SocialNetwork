@@ -1,0 +1,64 @@
+.all{
+    display: grid;
+    margin: 20px 0 30px 0;
+    justify-content: center;
+    grid-template-areas: 'first second third';
+    grid-template-columns: 100px 500px 100px;
+    grid-template-rows: 125px;
+}
+.img{
+    height: 80px;
+    width: 80px;
+    border-radius: 30px;
+}
+
+.first button{
+    width: 100%;
+    background-color: dimgrey;
+    font-weight: bolder;
+    color: white;
+
+}
+.first{
+    grid-area: first;
+    padding: 5px;
+    border-bottom: 2px solid darkgray;
+}
+
+.second{
+    grid-area: second;
+    display: grid;
+    grid-template-rows: 62.5px 62.5px;
+    padding: 5px;
+    border-bottom: 2px solid darkgray;
+}
+.second .status{
+    opacity: 80%;
+}
+.second .fullName{
+    font-weight: bold;
+}
+
+.third{
+    grid-area: third;
+    display: grid;
+    grid-template-rows: 62.5px 62.5px;
+    padding: 5px;
+    border-bottom: 2px solid darkgray;
+}
+.third .country{
+    opacity: 70%;
+}
+.third .city{
+    opacity: 50%;
+}
+.pages{
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.selected_pages{
+    font-weight: bold;
+}
+.preloader{
+    height: 200px;
+}

@@ -1,0 +1,31 @@
+.header{
+
+    display: grid;
+    grid-template: 1fr/300px 1fr 150px;
+    grid-area: Header;
+    background-color: dimgrey;
+}
+.header__text{
+    padding: 30px;
+
+    font-size: 24px;
+    font-weight: bold;
+    font-family: -apple-system;
+    text-align: center;
+    color: white;
+
+}
+.header__img {
+    display: grid;
+    grid-template: 100px/300px;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+}
+.header__img img{
+    border-radius: 50px;
+    width: 100px;
+}
+.loginBlock{
+    color: white;
+}

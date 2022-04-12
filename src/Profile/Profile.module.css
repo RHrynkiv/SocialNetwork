@@ -1,0 +1,65 @@
+.content{
+    grid-area: content;
+    display: grid;
+    grid-template-areas: "image"  "profile_photo" "description" "text";
+    grid-template-rows: 150px 105px 200px 1fr;
+    padding: 10px 20px 0 20px;
+    background-color: darkgray;
+    min-height: 84.5vh;
+}
+.description{
+    grid-area: description;
+}
+.description .name{
+    text-align: center;
+    font-family: "Cambria Math", serif;
+    font-size: 24px;
+}
+.name input{
+    width: 300px;
+}
+.profilePhoto{
+    grid-area: profile_photo;
+    text-align: center;
+}
+.profilePhoto img{
+    margin: -70px 0 0 0;
+    height: 175px;
+    border-radius: 40%;
+}
+.content__myposts{
+    padding: 20px;
+    display: inline-block;
+    grid-template-areas: 'photo post button';
+    grid-template-columns: 60px 100px 50px;
+    grid-template-rows: 30px;
+    align-items: center;
+    grid-area: text;
+}
+.content__img img{
+    min-width: 100%;
+    height: 150px;
+    display: grid;
+    grid-area: image;
+}
+.content__photo img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    grid-area: photo;
+    border-radius: 40%;
+}
+.content__post{
+    grid-area: post;
+}
+.content__OtherPosts{
+    background-color: white;
+    padding: 5px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    margin: 10px;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr;
+}

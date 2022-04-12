@@ -1,0 +1,13 @@
+.all{
+    margin: 20px 0 0 30px;
+    padding-left: 20px;
+    width: 250px;
+    height: 300px;
+    border: 2px solid #000;
+    background-color: darkgray;
+    border-radius: 10px;
+}
+.all .error{
+    color: red;
+    font-weight: bold;
+}

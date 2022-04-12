@@ -1,0 +1,15 @@
+.content{
+    display: grid;
+    grid-template: 150px 50px/320px 1fr;
+    padding: 10px;
+    height: 100%;
+
+}
+textarea{
+    margin: 0 10px 0 10px;
+}
+button{
+    width:50px;
+    height:20px;
+    border-radius: 5px;
+}

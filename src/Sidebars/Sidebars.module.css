@@ -1,0 +1,19 @@
+.sidebars{
+    padding: 20px 0 0 0;
+    display: grid;
+    grid-template: 1fr/300px;
+    grid-area: sidebar;
+    background-color: dimgray;
+    justify-items: center;
+    min-height: 83vh;
+}
+.sidebars__items a{
+    color: white;
+    font-size: 24px;
+    font-family: Ubuntu;
+    text-decoration-line: none;
+
+}
+.sidebars__items a:hover{
+    color: lightsteelblue;
+}
