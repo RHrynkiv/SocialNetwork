@@ -5,6 +5,7 @@ let Preloader = () =>{
     return(
         <div className={style.preloader}>
             <img src={preloaderimg}/>
+            Не забудьте підключити VPN!
         </div>
     )
 }

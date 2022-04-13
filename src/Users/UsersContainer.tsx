@@ -8,7 +8,6 @@ import {
 } from "../redux/usersreducer";
 import React from "react";
 import Preloader from "../common/preloader";
-import withAuthRedirect from "../HOC/withAuthRedirect";
 import {compose} from "redux";
 
 type PropsType = {
