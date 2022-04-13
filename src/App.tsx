@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {HashRouter, Route} from 'react-router-dom';
 import './App.css';
 import Sidebars from "./Sidebars/Sidebars";
 import News from "./News/News";
@@ -11,7 +11,7 @@ import Login from "./Login/login";
 
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="wrapper">
                 <HeaderContainer/>
                 <Sidebars/>
@@ -23,7 +23,7 @@ function App() {
                     <Route path="/login" render={() => <Login/>}/>
                 </div>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
