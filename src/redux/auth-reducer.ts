@@ -1,6 +1,14 @@
-import {UsersAPI} from "../API/API";
+import {authAPI, UsersAPI} from "../API/API";
+import {Dispatch} from "redux";
 
 type StateType = {};
+
+export type LoginParamsType = {
+    email: string
+    password: string
+    rememberMe: boolean
+    captcha?: string
+}
 
 const SET_USER_DATA = "SET_USER_DATA"
 let initialState = {
@@ -18,10 +26,15 @@ const authReducer = (state: StateType = initialState, action: any) => {
                 isAuth:true
             }
         }
+        case 'login/SET-IS-LOGGED-IN': {
+            return {...state, isAuth: action.value}
+        }
         default:
             return state;
     }
 }
+export const setIsLoggedInAC = (value: boolean) =>
+    ({type: 'login/SET-IS-LOGGED-IN', value} as const)
 export const setAuthUserData = (userId: string, email: string, login: string) => ({
     type: SET_USER_DATA,
     data: {
@@ -40,5 +53,14 @@ export const getAuth = () => {
                 }
     })
 }
+}
+export const loginTC = (data: LoginParamsType) => (dispatch: Dispatch) => {
+    authAPI.login(data)
+        .then(res => {
+            if(res.data.resultCode === 0){
+                dispatch(setIsLoggedInAC(true))
+            }
+        })
+
 }
 export default authReducer;

@@ -55,8 +55,9 @@ const mapDispatchToProps = (dispatch: any) => {
         }
     })
 }
-
-let ProfileContainer = withRouter(ProfileContainerClass)
 export default compose(
+    withAuthRedirect,
+    withRouter,
     connect(mapStateToProps, mapDispatchToProps),
-)(ProfileContainer);
+
+)(ProfileContainerClass);

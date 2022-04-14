@@ -1,4 +1,5 @@
 import * as axios from "axios";
+import {LoginParamsType} from "../redux/auth-reducer";
 
 
 const instance = axios.default.create({
@@ -40,5 +41,11 @@ export const profileAPI = {
           .then((response) => {
             return response.data
         }))
+    }
+}
+export const authAPI = {
+    login(data: LoginParamsType){
+        const promise = instance.post(`auth/login`,data)
+        return promise
     }
 }

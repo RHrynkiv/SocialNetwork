@@ -7,7 +7,7 @@ import ProfileContainer from "./Profile/ProfileContainer";
 import DialogsContainer from './Dialogs/DialogsContainer';
 import UsersContainer from "./Users/UsersContainer";
 import HeaderContainer from "./Header/HeaderContainer";
-import Login from "./Login/login";
+import {Login} from "./Login/login";
 
 function App() {
     return (

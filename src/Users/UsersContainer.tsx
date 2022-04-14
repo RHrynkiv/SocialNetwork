@@ -9,6 +9,7 @@ import {
 import React from "react";
 import Preloader from "../common/preloader";
 import {compose} from "redux";
+import withAuthRedirect from "../HOC/withAuthRedirect";
 
 type PropsType = {
     users: Array<{ id: number, photos: any, followed: boolean, name: string, status: string, location: { country: string, city: string } }>
@@ -105,5 +106,6 @@ const dispatchToProps = (dispatch: any) => {
 }
 
 export default compose(
+    withAuthRedirect,
     connect(stateToProps, dispatchToProps),
 )(UsersContainerAPI);
