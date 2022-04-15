@@ -77,16 +77,18 @@ export const Login = () => {
                             <FormControlLabel style={{backgroundColor: "white", borderRadius: "5px", margin: "3px"}} label={'Remember me'} control={<Checkbox onChange={formik.handleChange}
                                                                                        checked={formik.values.rememberMe}
                                                                                        name="rememberMe"/>}/>
-                            <button type={'submit'} style={{
-                                margin: " 0 0 0 80px",
-                                backgroundColor: "dimgrey",
-                                color: "white",
-                                width: "75px",
-                                height: "25px",
-                                fontSize: "16px"
-                            }}>
-                                Login
-                            </button>
+                            <label>
+                                <button type={'submit'} style={{
+                                    margin: " 0 0 0 80px",
+                                    backgroundColor: "dimgrey",
+                                    color: "white",
+                                    width: "75px",
+                                    height: "25px",
+                                    fontSize: "16px"
+                                }}>
+                                    Login
+                                </button>
+                            </label>
                             <div style={{textAlign: "center", opacity: "50%", padding: "5px 0 0 0", color: "white"}}>Don't forget to
                                 turn on VPN
                             </div>
